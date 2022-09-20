@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:wght@200&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*TODOS*/ 
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Nunito Sans' , sans-serif;
+}
+
+header{
+    background-color: #030114;
+    padding: 10px 5px 10px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoBarra{
+    width: 95%;
+}
+
+nav{
+    padding-right: 10px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+footer{
+    background-color: #030114;
+    color: white;
+    font-style: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px 10px 0px 10px;
+}
+
+div.footer{
+    width: 140px;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.footer img{
+    padding: 5px;
+    margin: 2px;
+}
+
+div.footer p{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+
+/*inicio*/
+
+img.primero{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+div.primero{
+    width: 100%;
+    height: 220px;
+    background-color: #060327;
+    overflow: hidden;
+    color: white;
+}
+
+div.primero h1{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 650;
+    padding: 15px 10px 0px 10px;
+}
+
+div.primero p{
+    font-size: 20px;
+    color: #aca7d5;
+    font-weight: lighter;
+    padding: 5px 10px 30px 10px;
+}
+
+section.lemas{
+    width: 100%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #565370;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section.lemas h2{
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 20px;
+}
+
+div.lemas{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.lemas figure{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+div.lemas h3{
+    margin-top: 10%;
+}
+
+section.banner{
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background-color: #050325b2;
+    color: white;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+img.banner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: 1s;
+}
+
+img.banner:hover{
+    transform: scale(1.2);
+}
+
+div.banner{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #03011496;
+    color: white;
+    padding: 40px 0px 40px 0px;
+}
+
+div.banner h2{
+    font-size: 35px;
+    font-weight: 300;
+}
+
+div.banner p{
+    font-size: 25px;
+    color: #aca7d5;
+}
+
+
+
+img.primero{
+    grid-area: foto;
+}
+
+div.primero{
+    grid-area: nombre;
+}
+
+section.lemas{
+    grid-area: lemas;
+}
+
+section.banner{
+    grid-area: banner;
+}
+
+
+/*Nosotros*/
+
+.nos{
+    margin: 0px 10px 40px 10px;
+}
+
+.nos h1{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #565370;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.nosotros{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #b9b7cd75;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.nosotros h2{
+    margin: 10px 0px 20px 0px;
+}
+
+.somos{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.somos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 0.6;
+    transition: 2s;
+}
+
+.somos img:hover{
+    transform: scale(1.4);
+}
+
+.equipo{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #565370;
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+}
+
+.perfil{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.perfil:hover{
+    animation: profile 4s;
+}
+
+@keyframes profile{
+    10%{
+        background-color:#b9b7cd49;
+    }
+    40%{
+        transform: scale(1.13);
+    }
+}
+
+.profpic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.profpic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.nos h1{
+    grid-area: quien;
+}
+
+.nos-1{
+    grid-area: nos-1;
+}
+
+.nos-2{
+    grid-area: nos-2;
+}
+
+.nos-3{
+    grid-area: nos-3;
+}
+
+.som-1{
+    grid-area: som-1;
+}
+
+.som-2{
+    grid-area: som-2;
+}
+
+.som-3{
+    grid-area: som-3;
+}
+
+.equipo{
+    grid-area: equipo;
+}
+
+.per-1{
+    grid-area: per-1;
+}
+
+.per-2{
+    grid-area: per-2;
+}
+
+.per-3{
+    grid-area: per-3;
+}
+
+.per-4{
+    grid-area: per-4;
+}
+
+.per-5{
+    grid-area: per-5;
+}
+
+
+/*Servicios*/
+
+.estudios{
+    background-color:#b9b7cd49;
+    text-align: center;
+    padding: 10px;
+    color: #060327;
+}
+
+.estudios p{
+    margin: 1rem;
+}
+
+.marcado{
+    font-weight: bolder;
+}
+
+.ensayos{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.ensayos button{
+    height: 150px;
+    padding: 5px 10px 5px 5px;
+    margin-top: 20px;
+    background-color:#e4e3f14f;
+}
+
+.ensayos img{
+    width: 90px;
+    margin-right: 5px;
+}
+
+.ensayos h2{
+    font-size: 17px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+}
+
+.ensayos li{
+    font-size: 15px;
+    color:#565370;
+}
+
+/*Saber Más*/
+
+.saber h2{
+    text-align: center;
+    margin: 20px 0px 40px 0px;
+}
+
+section.cultivo{
+    color:#060327;
+}
+
+
+.baja{
+    background-color:#b9b7cd75;
+}
+
+
+
+
+
+
+
+@media(min-width: 480px){
+
+/*inicio*/
+
+    img.primero{
+        height: 350px;
+    }
+
+    div.primero{
+        height: 300px;
+    }
+
+    div.primero h1{
+        font-size: 60px;
+        padding: 15px 10px 0px 10px;
+    }
+    
+    div.primero p{
+        font-size: 25px;
+        padding: 5px 10px 30px 10px;
+    }
+
+    div.banner{
+        padding: 50px 0px 50px 0px;
+    }
+
+}
+
+
+@media(min-width: 768px){
+
+/*inicio*/
+
+    main.inicio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "foto nombre"
+        "lemas lemas"
+        "banner banner";   
+    }
+
+    div.primero{
+        height: 350px;
+    }
+
+    div.cover{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    div.lemas{
+        width: 200px;
+        height: 320px;
+    }
+
+/*Nosotros*/
+
+    .quienes{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "quien quien"
+        "nos-1 som-1"
+        "som-2 nos-2"
+        "nos-3 som-3";
+    }
+
+    .profesion{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-areas: 
+        "equipo equipo equipo equipo equipo equipo"
+        "per-1 per-1 per-2 per-2 per-3 per-3"
+        ". per-4 per-4 per-5 per-5 .";
+    }
+
+    .nos h1{
+        margin: 40px 0px 40px 0px;
+    }
+
+    .nosotros, .somos{
+        margin-bottom: 0px;
+    }
+
+    .perfil{
+        margin-bottom: 40px;
+    }
+
+/*Servicios*/
+
+    .estudios{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: larger;
+    }
+
+    .ensayos button{
+        padding: 5px 40px 5px 40px;
+    }
+
+    .ensayos h2{
+        font-size: 20px;  
+    }
+
+    .ensayos img{
+        width: 120px;
+        margin-right: 20px;
+    }
+
+    div.accordion-body{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ensayos li{
+        margin: 20px 0px 20px 0px;
+    }
+
+
+    
+}
+
+
+
+@media(min-width: 1024px){
+
+    nav li{
+        padding: 20px;
+    }
+
+/*inicio*/
+
+    div.primero{
+        padding-left: 5px;
+    }
+
+    div.primero h1{
+        margin-top: 20px;
+        font-size: 67px;
+    }
+    
+    div.primero p{
+        margin-top: 15px;
+        font-size: 30px;
+    }
+
+    footer{
+        padding: 0px 50px 0px 50px;
+    }
+
+/*Nosotros*/
+
+    .nos{
+        margin: 40px 10% 40px 10%;
+        gap: 25px;
+    }
+
+/*Servicios*/
+
+    .estudios{
+        font-size: x-large;
+        padding: 80px;
+        margin-bottom: 40px;
+    }
+
+    .ensayos button{
+        padding: 5px 40px 5px 40px;
+    }
+
+    .ensayos h2{
+        font-size: 28px;  
+    }
+
+    .ensayos img{
+        width: 120px;
+        margin-right: 20px;
+    }
+
+    .ensayos li{
+        font-size: larger;
+    }
+
+
+}
+
