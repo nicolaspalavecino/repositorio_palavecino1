@@ -668,5 +668,9 @@ section.cultivo{
         gap: 30px;
     }
 
+    .cultivoEtapa img{
+        margin: 20px;
+    }
+
 }
 
