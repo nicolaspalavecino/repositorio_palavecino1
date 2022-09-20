@@ -409,14 +409,53 @@ section.cultivo{
     color:#060327;
 }
 
+.cultivo button{
+    padding: 5px 20px 5px 5px;
+}
 
-.baja{
-    background-color:#b9b7cd75;
+.baja-e {
+    background-color:#837da879;
+    padding-bottom: 40px;
+}
+
+.cul-1, .cul-2, .cul-3, .cul-4, .cul-5{
+    background-color: #a49fc179;
+}
+
+.cultivoEtapa{
+    text-align: center;
+    background-color: rgb(240, 239, 254);
+    padding: 10px;
+}
+
+.cultivoEtapa img{
+    margin: 5px;
+}
+
+.baja-e p{
+    padding: 20px;
 }
 
 
+.cul-1{
+    grid-area: cul-1;
+}
 
+.cul-2{
+    grid-area: cul-2;
+}
 
+.cul-3{
+    grid-area: cul-3;
+}
+
+.cul-4{
+    grid-area: cul-4;
+}
+
+.cul-5{
+    grid-area: cul-5;
+}
 
 
 
@@ -536,7 +575,7 @@ section.cultivo{
         margin-right: 20px;
     }
 
-    div.accordion-body{
+    .baja-s{
         height: 200px;
         display: flex;
         flex-direction: column;
@@ -547,8 +586,20 @@ section.cultivo{
         margin: 20px 0px 20px 0px;
     }
 
+/*Saber Más*/
 
-    
+    .cultivoEtapa img{
+        margin: 10px;
+    }
+
+    .baja-e{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-areas:
+        "cul-1 cul-1 cul-2 cul-2 cul-3 cul-3"
+        ". cul-4 cul-4 cul-5 cul-5 .";
+        gap: 20px;
+    }
 }
 
 
@@ -611,6 +662,11 @@ section.cultivo{
         font-size: larger;
     }
 
+/*Saber Más*/
+
+    .baja-e{
+        gap: 30px;
+    }
 
 }
 
