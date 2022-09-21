@@ -12,6 +12,14 @@ a{
     color: white;
 }
 
+.bold{
+    font-weight: bold;
+}
+
+p{
+    margin: 0px;
+}
+
 body{
     background-color: white;
     display: flex;
@@ -415,11 +423,16 @@ section.cultivo{
 
 .baja-e {
     background-color:#837da879;
-    padding-bottom: 40px;
+    padding: 20px;
 }
 
-.cul-1, .cul-2, .cul-3, .cul-4, .cul-5{
+.etapa{
     background-color: #a49fc179;
+    margin-bottom: 20px;
+}
+
+.lastEtapa{
+    margin: 0px;
 }
 
 .cultivoEtapa{
@@ -432,29 +445,60 @@ section.cultivo{
     margin: 5px;
 }
 
-.baja-e p{
+.descript{
     padding: 20px;
+    color: #060327;
 }
 
-
-.cul-1{
-    grid-area: cul-1;
+.descript li{
+    color: #060327;
+    margin-bottom: 5px;
 }
 
-.cul-2{
-    grid-area: cul-2;
+.tincion{
+    background-color: #030114;
+    color: white;
 }
 
-.cul-3{
-    grid-area: cul-3;
+/*Contacto*/
+
+section.banner-sup{
+    margin: 0px 0px 20px 0px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    ;
 }
 
-.cul-4{
-    grid-area: cul-4;
+div.banner-sup{
+    background-color: #0301144b;
 }
 
-.cul-5{
-    grid-area: cul-5;
+.banner-sup h1{
+    color: white;
+}
+
+.contacto{
+    background-color: #e1e0f2;
+    margin-bottom: 40px;
+}
+
+.contacto iframe{
+    width: 100%;
+    height: 320px;
+}
+
+.comunica{
+    padding: 20px 10px 20px 10px;
+}
+
+.comunica h3{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #030114;
+    margin-bottom: 20px;
+}
+
+p.last-p{
+    margin-bottom: 8px;
 }
 
 
@@ -592,13 +636,30 @@ section.cultivo{
         margin: 10px;
     }
 
-    .baja-e{
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-        grid-template-areas:
-        "cul-1 cul-1 cul-2 cul-2 cul-3 cul-3"
-        ". cul-4 cul-4 cul-5 cul-5 .";
-        gap: 20px;
+    .etapa{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .descript{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .descript p{
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .descript ul{
+        margin: 0px;
+    }
+
+    .descript li{
+        font-size: 13px;
+        margin: 5px 0px 5px 0px;
     }
 }
 
@@ -664,12 +725,34 @@ section.cultivo{
 
 /*Saber Más*/
 
-    .baja-e{
-        gap: 30px;
-    }
-
     .cultivoEtapa img{
         margin: 20px;
+    }
+
+    .descript p{
+        font-size: 15px;
+    }
+
+    .descript li{
+        font-size: 15px;
+    }
+
+/*Contacto*/
+    
+    .contacto{
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contacto iframe{
+        width: 60%;
+        height: 400px;
+    }
+
+    .comunica{
+        width: 40%;
+        padding: 40px 20px 40px 20px;
     }
 
 }
