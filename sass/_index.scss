@@ -118,3 +118,74 @@ section.lemas{
 section.banner{
     grid-area: banner;
 }
+
+@media(min-width: 480px){
+    
+        img.primero{
+            height: 350px;
+        }
+    
+        div.primero{
+            height: 300px;
+            h1{
+                font-size: 60px;
+                padding: 15px 10px 0px 10px;
+            }
+            p{
+                font-size: 25px;
+                padding: 5px 10px 30px 10px;
+            }
+        }
+                
+        div.banner{
+            padding: 50px 0px 50px 0px;
+        }
+    
+    }
+
+@media(min-width: 768px){
+    
+        main.inicio{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "foto nombre"
+            "lemas lemas"
+            "banner banner";   
+        }
+    
+        div.primero{
+            height: 350px;
+        }
+    
+        div.cover{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    
+        div.lemas{
+            width: 200px;
+            height: 320px;
+        }
+}
+
+@media(min-width: 1024px){
+    
+        div.primero{
+            padding-left: 5px;
+            h1{
+                margin-top: 20px;
+                font-size: 67px;
+            }
+            p{
+                margin-top: 15px;
+                font-size: 30px;
+            }
+        }
+    
+        footer{
+            padding: 0px 50px 0px 50px;
+        }
+}    

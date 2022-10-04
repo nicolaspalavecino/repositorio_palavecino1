@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:wght@200&display=swap");
 * {
   padding: 0px;
@@ -70,6 +69,11 @@ footer div p {
   font-weight: 100;
 }
 
+@media (min-width: 1024px) {
+  nav li {
+    padding: 20px;
+  }
+}
 img.primero {
   width: 100%;
   height: 300px;
@@ -196,6 +200,61 @@ section.banner {
   grid-area: banner;
 }
 
+@media (min-width: 480px) {
+  img.primero {
+    height: 350px;
+  }
+  div.primero {
+    height: 300px;
+  }
+  div.primero h1 {
+    font-size: 60px;
+    padding: 15px 10px 0px 10px;
+  }
+  div.primero p {
+    font-size: 25px;
+    padding: 5px 10px 30px 10px;
+  }
+  div.banner {
+    padding: 50px 0px 50px 0px;
+  }
+}
+@media (min-width: 768px) {
+  main.inicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "foto nombre" "lemas lemas" "banner banner";
+  }
+  div.primero {
+    height: 350px;
+  }
+  div.cover {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  div.lemas {
+    width: 200px;
+    height: 320px;
+  }
+}
+@media (min-width: 1024px) {
+  div.primero {
+    padding-left: 5px;
+  }
+  div.primero h1 {
+    margin-top: 20px;
+    font-size: 67px;
+  }
+  div.primero p {
+    margin-top: 15px;
+    font-size: 30px;
+  }
+  footer {
+    padding: 0px 50px 0px 50px;
+  }
+}
 .nos {
   margin: 0px 10px 40px 10px;
 }
@@ -346,6 +405,35 @@ section.banner {
   grid-area: per-5;
 }
 
+@media (min-width: 768px) {
+  .quienes {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "quien quien" "nos-1 som-1" "som-2 nos-2" "nos-3 som-3";
+  }
+  .profesion {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "equipo equipo equipo equipo equipo equipo" "per-1 per-1 per-2 per-2 per-3 per-3" ". per-4 per-4 per-5 per-5 .";
+  }
+  .nos h1 {
+    margin: 40px 0px 40px 0px;
+  }
+  .nosotros, .somos {
+    margin-bottom: 0px;
+  }
+  .perfil {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .nos {
+    margin: 40px 10% 40px 10%;
+    gap: 25px;
+  }
+}
 .estudios {
   background-color: rgba(185, 183, 205, 0.2862745098);
   text-align: center;
@@ -381,6 +469,54 @@ section.banner {
   color: #565370;
 }
 
+@media (min-width: 768px) {
+  .estudios {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: larger;
+  }
+  .ensayos button {
+    padding: 5px 40px 5px 40px;
+  }
+  .ensayos button img {
+    width: 120px;
+    margin-right: 20px;
+  }
+  .ensayos button h2 {
+    font-size: 24px;
+  }
+  .baja-s {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .baja-s li {
+    margin: 20px 0px 20px 0px;
+  }
+}
+@media (min-width: 1024px) {
+  .estudios {
+    font-size: x-large;
+    padding: 80px;
+    margin-bottom: 40px;
+  }
+  .ensayos button {
+    padding: 5px 40px 5px 40px;
+  }
+  .ensayos button h2 {
+    font-size: 28px;
+  }
+  .ensayos button img {
+    width: 120px;
+    margin-right: 20px;
+  }
+  .ensayos li {
+    font-size: larger;
+  }
+}
 .saber h2 {
   text-align: center;
   margin: 20px 0px 40px 0px;
@@ -440,6 +576,7 @@ section.cultivo button {
   padding: 10px;
 }
 .cultivoEtapa img {
+  width: 100px;
   margin: 5px;
 }
 
@@ -452,130 +589,7 @@ section.cultivo button {
   margin-bottom: 5px;
 }
 
-section.banner-sup {
-  margin: 0px 0px 20px 0px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
-section.banner-sup div {
-  background-color: rgba(3, 1, 20, 0.2941176471);
-}
-section.banner-sup div h1 {
-  color: white;
-}
-
-.contacto {
-  background-color: #e1e0f2;
-  margin-bottom: 40px;
-}
-.contacto iframe {
-  width: 100%;
-  height: 320px;
-}
-
-.comunica {
-  padding: 20px 10px 20px 10px;
-}
-.comunica h3 {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  padding-bottom: 2px;
-  border-bottom: 1px solid #030114;
-  margin-bottom: 20px;
-}
-
-p.last-p {
-  margin-bottom: 8px;
-}
-
-@media (min-width: 480px) {
-  /*inicio*/
-  img.primero {
-    height: 350px;
-  }
-  div.primero {
-    height: 300px;
-  }
-  div.primero h1 {
-    font-size: 60px;
-    padding: 15px 10px 0px 10px;
-  }
-  div.primero p {
-    font-size: 25px;
-    padding: 5px 10px 30px 10px;
-  }
-  div.banner {
-    padding: 50px 0px 50px 0px;
-  }
-}
 @media (min-width: 768px) {
-  /*inicio*/
-  main.inicio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "foto nombre" "lemas lemas" "banner banner";
-  }
-  div.primero {
-    height: 350px;
-  }
-  div.cover {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  div.lemas {
-    width: 200px;
-    height: 320px;
-  }
-  /*Nosotros*/
-  .quienes {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "quien quien" "nos-1 som-1" "som-2 nos-2" "nos-3 som-3";
-  }
-  .profesion {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "equipo equipo equipo equipo equipo equipo" "per-1 per-1 per-2 per-2 per-3 per-3" ". per-4 per-4 per-5 per-5 .";
-  }
-  .nos h1 {
-    margin: 40px 0px 40px 0px;
-  }
-  .nosotros, .somos {
-    margin-bottom: 0px;
-  }
-  .perfil {
-    margin-bottom: 40px;
-  }
-  /*Servicios*/
-  .estudios {
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: larger;
-  }
-  .ensayos button {
-    padding: 5px 40px 5px 40px;
-  }
-  .ensayos h2 {
-    font-size: 20px;
-  }
-  .ensayos img {
-    width: 120px;
-    margin-right: 20px;
-  }
-  .baja-s {
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .ensayos li {
-    margin: 20px 0px 20px 0px;
-  }
-  /*Saber Más*/
   .citogenetica {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "cito-1 cito-2";
@@ -613,55 +627,12 @@ p.last-p {
   .descript ul {
     margin: 0px;
   }
-  .descript li {
+  .descript ul li {
     font-size: 13px;
     margin: 5px 0px 5px 0px;
   }
 }
 @media (min-width: 1024px) {
-  nav li {
-    padding: 20px;
-  }
-  /*inicio*/
-  div.primero {
-    padding-left: 5px;
-  }
-  div.primero h1 {
-    margin-top: 20px;
-    font-size: 67px;
-  }
-  div.primero p {
-    margin-top: 15px;
-    font-size: 30px;
-  }
-  footer {
-    padding: 0px 50px 0px 50px;
-  }
-  /*Nosotros*/
-  .nos {
-    margin: 40px 10% 40px 10%;
-    gap: 25px;
-  }
-  /*Servicios*/
-  .estudios {
-    font-size: x-large;
-    padding: 80px;
-    margin-bottom: 40px;
-  }
-  .ensayos button {
-    padding: 5px 40px 5px 40px;
-  }
-  .ensayos h2 {
-    font-size: 28px;
-  }
-  .ensayos img {
-    width: 120px;
-    margin-right: 20px;
-  }
-  .ensayos li {
-    font-size: larger;
-  }
-  /*Saber Más*/
   .cultivoEtapa img {
     margin: 20px;
   }
@@ -671,7 +642,42 @@ p.last-p {
   .descript li {
     font-size: 15px;
   }
-  /*Contacto*/
+}
+section.banner-sup {
+  margin: 0px 0px 20px 0px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+section.banner-sup div {
+  background-color: rgba(3, 1, 20, 0.2941176471);
+}
+section.banner-sup div h1 {
+  color: white;
+}
+
+.contacto {
+  background-color: #e1e0f2;
+  margin-bottom: 40px;
+}
+.contacto iframe {
+  width: 100%;
+  height: 320px;
+}
+
+.comunica {
+  padding: 20px 10px 20px 10px;
+}
+.comunica h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #030114;
+  margin-bottom: 20px;
+}
+
+p.last-p {
+  margin-bottom: 8px;
+}
+
+@media (min-width: 1024px) {
   .contacto {
     height: 400px;
     display: flex;

@@ -32,3 +32,62 @@
         color:#565370;
     }
 }
+
+@media(min-width: 768px){
+
+    .estudios{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: larger;
+    }
+
+    .ensayos{
+        button{
+            padding: 5px 40px 5px 40px;
+            img{
+                width: 120px;
+                margin-right: 20px;
+            }
+            h2{
+                font-size: 24px;  
+            }
+        }
+    }
+
+    .baja-s{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        li{
+            margin: 20px 0px 20px 0px;
+        }
+    }
+}
+
+@media(min-width: 1024px){
+
+    .estudios{
+        font-size: x-large;
+        padding: 80px;
+        margin-bottom: 40px;
+    }
+
+    .ensayos{
+        button{
+            padding: 5px 40px 5px 40px;
+            h2{
+                font-size: 28px;  
+            }
+            img{
+                width: 120px;
+                margin-right: 20px;
+            }
+        }
+        li{
+            font-size: larger;
+        }
+    }
+}

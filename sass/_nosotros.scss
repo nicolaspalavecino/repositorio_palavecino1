@@ -8,7 +8,6 @@
     }
 }
 
-
 .nosotros{
     width: 100%;
     display: flex;
@@ -22,7 +21,6 @@
         margin: 10px 0px 20px 0px;
     }
 }
-
 
 .somos{
     width: 100%;
@@ -41,7 +39,6 @@
         transform: scale(1.4);
     }
 }
-
 
 .equipo{
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -85,7 +82,6 @@
     object-position: center center;
     }
 }
-
 
 .nos h1{
     grid-area: quien;
@@ -138,3 +134,49 @@
 .per-5{
     grid-area: per-5;
 }
+
+
+@media(min-width: 768px){
+
+    .quienes{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "quien quien"
+        "nos-1 som-1"
+        "som-2 nos-2"
+        "nos-3 som-3";
+    }
+
+    .profesion{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-areas: 
+        "equipo equipo equipo equipo equipo equipo"
+        "per-1 per-1 per-2 per-2 per-3 per-3"
+        ". per-4 per-4 per-5 per-5 .";
+    }
+
+    .nos h1{
+        margin: 40px 0px 40px 0px;
+    }
+
+    .nosotros, .somos{
+        margin-bottom: 0px;
+    }
+
+    .perfil{
+        margin-bottom: 40px;
+    }
+}
+
+@media(min-width: 1024px){
+
+    .nos{
+        margin: 40px 10% 40px 10%;
+        gap: 25px;
+    }
+}
+

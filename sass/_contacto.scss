@@ -32,3 +32,22 @@ p.last-p{
     margin-bottom: 8px;
 }
 
+@media(min-width: 1024px){
+    
+    .contacto{
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        iframe{
+            width: 60%;
+            height: 400px;
+        }
+    }
+
+    .comunica{
+        width: 40%;
+        padding: 40px 20px 40px 20px;
+    }
+
+}
+

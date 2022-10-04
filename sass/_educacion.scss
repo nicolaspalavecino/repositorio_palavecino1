@@ -59,6 +59,7 @@ section.cultivo{
     background-color: rgb(240, 239, 254);
     padding: 10px;
     img{
+        width: 100px;
         margin: 5px;
     }
 }
@@ -69,5 +70,75 @@ section.cultivo{
     li{
         color: #060327;
         margin-bottom: 5px;
+    }
+}
+
+
+@media(min-width: 768px){
+
+    .citogenetica{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "cito-1 cito-2";
+        gap: 20px;
+        background-color: #060327;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .citogen-1{
+        img{
+            width: 400px;
+            transition: 4s;
+        }
+        img:hover{
+            transform:scale(0.7);
+        }
+    } 
+
+    .citogen-2{
+        margin: 2% 10% 2% 0px;
+    }
+
+    .cultivoEtapa img{
+        margin: 10px;
+    }
+
+    .etapa{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .descript{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        ul{
+            margin: 0px;
+            li{
+                font-size: 13px;
+                margin: 5px 0px 5px 0px;
+            }
+        }
+    } 
+}
+
+@media(min-width: 1024px){
+
+    .cultivoEtapa img{
+        margin: 20px;
+    }
+
+    .descript{
+        p{
+        font-size: 15px;
+        }
+            li{
+                font-size: 15px;
+            }
     }
 }
