@@ -1,0 +1,34 @@
+.estudios{
+    background-color:#b9b7cd49;
+    text-align: center;
+    padding: 10px;
+    color: #060327;
+    p{
+        margin: 1rem;
+    }
+}
+
+.ensayos{
+    width: 100%;
+    margin-bottom: 20px;
+    button{
+        height: 150px;
+        padding: 5px 10px 5px 5px;
+        margin-top: 20px;
+        background-color:#e4e3f14f;
+        img{
+            width: 90px;
+            margin-right: 5px;
+        }
+        h2{
+            font-size: 17px;
+            font-weight: bolder;
+            text-align: center;
+            margin: 0px 10px 0px 10px;
+        }
+    }
+    li{
+        font-size: 15px;
+        color:#565370;
+    }
+}

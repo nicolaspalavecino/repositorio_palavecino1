@@ -1,812 +1,688 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:wght@200&display=swap');
-
-*{
-    padding: 0px;
-    margin: 0px;
-}
-
-/*TODOS*/ 
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
-.bold{
-    font-weight: bold;
-}
-
-p{
-    margin: 0px;
-}
-
-body{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: 'Nunito Sans' , sans-serif;
-}
-
-header{
-    background-color: #030114;
-    padding: 10px 5px 10px 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logoBarra{
-    width: 95%;
-}
-
-nav{
-    padding-right: 10px;
-}
-
-nav ul{
-    list-style: none;
-}
-
-footer{
-    background-color: #030114;
-    color: white;
-    font-style: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0px 10px 0px 10px;
-}
-
-div.footer{
-    width: 140px;
-    padding: 5px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-div.footer img{
-    padding: 5px;
-    margin: 2px;
-}
-
-div.footer p{
-    font-size: 12px;
-    font-weight: 100;
-}
-
-
-/*inicio*/
-
-img.primero{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    object-position: center center;
-}
-
-div.primero{
-    width: 100%;
-    height: 220px;
-    background-color: #060327;
-    overflow: hidden;
-    color: white;
-}
-
-div.primero h1{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 40px;
-    font-weight: 650;
-    padding: 15px 10px 0px 10px;
-}
-
-div.primero p{
-    font-size: 20px;
-    color: #aca7d5;
-    font-weight: lighter;
-    padding: 5px 10px 30px 10px;
-}
-
-section.lemas{
-    width: 100%;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    color: #565370;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-section.lemas h2{
-    padding: 20px 0px 20px 0px;
-    margin-bottom: 20px;
-}
-
-div.lemas{
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-div.lemas figure{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-figure img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-}
-
-div.lemas h3{
-    margin-top: 10%;
-}
-
-section.banner{
-    margin: 20px 0px 20px 0px;
-    width: 100%;
-    height: 240px;
-    overflow: hidden;
-    background-color: #050325b2;
-    color: white;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-img.banner{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-    transition: 1s;
-}
-
-img.banner:hover{
-    transform: scale(1.2);
-}
-
-div.banner{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #03011496;
-    color: white;
-    padding: 40px 0px 40px 0px;
-}
-
-div.banner h2{
-    font-size: 35px;
-    font-weight: 300;
-}
-
-div.banner p{
-    font-size: 25px;
-    color: #aca7d5;
-}
-
-
-
-img.primero{
-    grid-area: foto;
-}
-
-div.primero{
-    grid-area: nombre;
-}
-
-section.lemas{
-    grid-area: lemas;
-}
-
-section.banner{
-    grid-area: banner;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:wght@200&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  margin: 0px;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+header {
+  background-color: #030114;
+  padding: 10px 5px 10px 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  width: 95%;
+}
+header nav {
+  padding-right: 10px;
+}
+header nav ul {
+  list-style: none;
+}
+
+footer {
+  background-color: #030114;
+  color: white;
+  font-style: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0px 10px 0px 10px;
+}
+footer div {
+  width: 140px;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer div img {
+  padding: 5px;
+  margin: 2px;
+}
+footer div p {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+img.primero {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+div.primero {
+  width: 100%;
+  height: 220px;
+  background-color: #060327;
+  overflow: hidden;
+  color: white;
+}
+div.primero h1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 650;
+  padding: 15px 10px 0px 10px;
+}
+div.primero p {
+  font-size: 20px;
+  color: #aca7d5;
+  font-weight: lighter;
+  padding: 5px 10px 30px 10px;
+}
+
+section.lemas {
+  width: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #565370;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+section.lemas h2 {
+  padding: 20px 0px 20px 0px;
+  margin-bottom: 20px;
+}
+
+div.lemas {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.lemas figure {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+div.lemas figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+div.lemas h3 {
+  margin-top: 10%;
+}
+
+section.banner {
+  margin: 20px 0px 20px 0px;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background-color: rgba(5, 3, 37, 0.6980392157);
+  color: white;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+section.banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  transition: 1s;
+}
+section.banner img.banner:hover {
+  transform: scale(1.2);
+}
+section.banner div {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(3, 1, 20, 0.5882352941);
+  color: white;
+  padding: 40px 0px 40px 0px;
+}
+section.banner div h2 {
+  font-size: 35px;
+  font-weight: 300;
+}
+section.banner div p {
+  font-size: 25px;
+  color: #aca7d5;
+}
+
+img.primero {
+  grid-area: foto;
+}
+
+div.primero {
+  grid-area: nombre;
+}
+
+section.lemas {
+  grid-area: lemas;
+}
+
+section.banner {
+  grid-area: banner;
+}
+
+.nos {
+  margin: 0px 10px 40px 10px;
+}
+.nos h1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #565370;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+}
+
+.nosotros {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(185, 183, 205, 0.4588235294);
+  padding: 20px;
+  margin-bottom: 10px;
 }
-
-
-/*Nosotros*/
-
-.nos{
-    margin: 0px 10px 40px 10px;
-}
-
-.nos h1{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    color: #565370;
-    text-align: center;
-    margin: 20px 0px 20px 0px;
-}
-
-.nosotros{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: #b9b7cd75;
-    padding: 20px;
-    margin-bottom: 10px;
-}
-
-.nosotros h2{
-    margin: 10px 0px 20px 0px;
+.nosotros h2 {
+  margin: 10px 0px 20px 0px;
 }
 
-.somos{
-    width: 100%;
-    height: 300px;
-    margin-bottom: 10px;
-    overflow: hidden;
+.somos {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+  overflow: hidden;
 }
-
-.somos img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-    opacity: 0.6;
-    transition: 2s;
+.somos img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  opacity: 0.6;
+  transition: 2s;
 }
-
-.somos img:hover{
-    transform: scale(1.4);
+.somos img:hover {
+  transform: scale(1.4);
 }
 
-.equipo{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    color: #565370;
-    text-align: center;
-    margin: 40px 0px 40px 0px;
+.equipo {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #565370;
+  text-align: center;
+  margin: 40px 0px 40px 0px;
 }
 
-.perfil{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-    padding: 10px;
+.perfil {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
-.perfil:hover{
-    animation: profile 4s;
+.perfil:hover {
+  -webkit-animation: profile 4s;
+          animation: profile 4s;
 }
 
-@keyframes profile{
-    10%{
-        background-color:#b9b7cd49;
-    }
-    40%{
-        transform: scale(1.13);
-    }
+@-webkit-keyframes profile {
+  10% {
+    background-color: rgba(185, 183, 205, 0.2862745098);
+  }
+  40% {
+    transform: scale(1.13);
+  }
 }
 
-.profpic{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 20px;
+@keyframes profile {
+  10% {
+    background-color: rgba(185, 183, 205, 0.2862745098);
+  }
+  40% {
+    transform: scale(1.13);
+  }
 }
-
-.profpic img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
+.profpic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
-
-.nos h1{
-    grid-area: quien;
+.profpic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
-.nos-1{
-    grid-area: nos-1;
+.nos h1 {
+  grid-area: quien;
 }
 
-.nos-2{
-    grid-area: nos-2;
+.nos-1 {
+  grid-area: nos-1;
 }
 
-.nos-3{
-    grid-area: nos-3;
+.nos-2 {
+  grid-area: nos-2;
 }
 
-.som-1{
-    grid-area: som-1;
+.nos-3 {
+  grid-area: nos-3;
 }
 
-.som-2{
-    grid-area: som-2;
+.som-1 {
+  grid-area: som-1;
 }
 
-.som-3{
-    grid-area: som-3;
+.som-2 {
+  grid-area: som-2;
 }
 
-.equipo{
-    grid-area: equipo;
+.som-3 {
+  grid-area: som-3;
 }
 
-.per-1{
-    grid-area: per-1;
+.equipo {
+  grid-area: equipo;
 }
 
-.per-2{
-    grid-area: per-2;
+.per-1 {
+  grid-area: per-1;
 }
 
-.per-3{
-    grid-area: per-3;
+.per-2 {
+  grid-area: per-2;
 }
 
-.per-4{
-    grid-area: per-4;
+.per-3 {
+  grid-area: per-3;
 }
 
-.per-5{
-    grid-area: per-5;
+.per-4 {
+  grid-area: per-4;
 }
-
-
-/*Servicios*/
 
-.estudios{
-    background-color:#b9b7cd49;
-    text-align: center;
-    padding: 10px;
-    color: #060327;
+.per-5 {
+  grid-area: per-5;
 }
 
-.estudios p{
-    margin: 1rem;
+.estudios {
+  background-color: rgba(185, 183, 205, 0.2862745098);
+  text-align: center;
+  padding: 10px;
+  color: #060327;
 }
-
-.marcado{
-    font-weight: bolder;
+.estudios p {
+  margin: 1rem;
 }
 
-.ensayos{
-    width: 100%;
-    margin-bottom: 20px;
+.ensayos {
+  width: 100%;
+  margin-bottom: 20px;
 }
-
-.ensayos button{
-    height: 150px;
-    padding: 5px 10px 5px 5px;
-    margin-top: 20px;
-    background-color:#e4e3f14f;
+.ensayos button {
+  height: 150px;
+  padding: 5px 10px 5px 5px;
+  margin-top: 20px;
+  background-color: rgba(228, 227, 241, 0.3098039216);
 }
-
-.ensayos img{
-    width: 90px;
-    margin-right: 5px;
+.ensayos button img {
+  width: 90px;
+  margin-right: 5px;
 }
-
-.ensayos h2{
-    font-size: 17px;
-    font-weight: bolder;
-    text-align: center;
-    margin: 0px 10px 0px 10px;
+.ensayos button h2 {
+  font-size: 17px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 0px 10px 0px 10px;
 }
-
-.ensayos li{
-    font-size: 15px;
-    color:#565370;
+.ensayos li {
+  font-size: 15px;
+  color: #565370;
 }
-
-/*Saber Más*/
 
-.saber h2{
-    text-align: center;
-    margin: 20px 0px 40px 0px;
+.saber h2 {
+  text-align: center;
+  margin: 20px 0px 40px 0px;
 }
 
-.citogen-1{
-    text-align: center;
-    grid-area: cito-1;
+.citogen-1 {
+  text-align: center;
+  grid-area: cito-1;
 }
-
-.citogen-1 img{
-    width: 90%;
+.citogen-1 img {
+  width: 90%;
 }
 
-.citogen-2{
-    color: white;
-    background-color: #565370;
-    padding: 20px;
-    margin-top: 10px;
+.citogen-2 {
+  color: white;
+  background-color: #565370;
+  padding: 20px;
+  margin-top: 10px;
 }
-
-.citogen-2 h2{
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 1px solid white;
-    grid-area: cito-2;
+.citogen-2 h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  grid-area: cito-2;
 }
 
-.citogenetica{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "cito-1"
-    "cito-2";
+.citogenetica {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "cito-1" "cito-2";
 }
 
-section.cultivo{
-    color:#060327;
+section.cultivo {
+  color: #060327;
 }
-
-.cultivo button{
-    padding: 5px 20px 5px 5px;
+section.cultivo button {
+  padding: 5px 20px 5px 5px;
 }
 
 .baja-e {
-    background-color:#837da879;
-    padding: 20px;
+  background-color: rgba(131, 125, 168, 0.4745098039);
+  padding: 20px;
 }
 
-.etapa{
-    background-color: #a49fc179;
-    margin-bottom: 20px;
+.etapa {
+  background-color: rgba(164, 159, 193, 0.4745098039);
+  margin-bottom: 20px;
 }
 
-.lastEtapa{
-    margin: 0px;
+.lastEtapa {
+  margin: 0px;
 }
 
-.cultivoEtapa{
-    text-align: center;
-    background-color: rgb(240, 239, 254);
-    padding: 10px;
+.cultivoEtapa {
+  text-align: center;
+  background-color: rgb(240, 239, 254);
+  padding: 10px;
+}
+.cultivoEtapa img {
+  margin: 5px;
 }
 
-.cultivoEtapa img{
-    margin: 5px;
+.descript {
+  padding: 20px;
+  color: #060327;
+}
+.descript li {
+  color: #060327;
+  margin-bottom: 5px;
 }
 
-.descript{
-    padding: 20px;
-    color: #060327;
+section.banner-sup {
+  margin: 0px 0px 20px 0px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+section.banner-sup div {
+  background-color: rgba(3, 1, 20, 0.2941176471);
+}
+section.banner-sup div h1 {
+  color: white;
 }
 
-.descript li{
-    color: #060327;
-    margin-bottom: 5px;
+.contacto {
+  background-color: #e1e0f2;
+  margin-bottom: 40px;
+}
+.contacto iframe {
+  width: 100%;
+  height: 320px;
 }
 
-.tincion{
-    background-color: #030114;
-    color: white;
+.comunica {
+  padding: 20px 10px 20px 10px;
+}
+.comunica h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #030114;
+  margin-bottom: 20px;
 }
 
-/*Contacto*/
-
-section.banner-sup{
-    margin: 0px 0px 20px 0px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    ;
+p.last-p {
+  margin-bottom: 8px;
 }
 
-div.banner-sup{
-    background-color: #0301144b;
+@media (min-width: 480px) {
+  /*inicio*/
+  img.primero {
+    height: 350px;
+  }
+  div.primero {
+    height: 300px;
+  }
+  div.primero h1 {
+    font-size: 60px;
+    padding: 15px 10px 0px 10px;
+  }
+  div.primero p {
+    font-size: 25px;
+    padding: 5px 10px 30px 10px;
+  }
+  div.banner {
+    padding: 50px 0px 50px 0px;
+  }
 }
-
-.banner-sup h1{
-    color: white;
-}
-
-.contacto{
-    background-color: #e1e0f2;
-    margin-bottom: 40px;
-}
-
-.contacto iframe{
+@media (min-width: 768px) {
+  /*inicio*/
+  main.inicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "foto nombre" "lemas lemas" "banner banner";
+  }
+  div.primero {
+    height: 350px;
+  }
+  div.cover {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  div.lemas {
+    width: 200px;
     height: 320px;
+  }
+  /*Nosotros*/
+  .quienes {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "quien quien" "nos-1 som-1" "som-2 nos-2" "nos-3 som-3";
+  }
+  .profesion {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "equipo equipo equipo equipo equipo equipo" "per-1 per-1 per-2 per-2 per-3 per-3" ". per-4 per-4 per-5 per-5 .";
+  }
+  .nos h1 {
+    margin: 40px 0px 40px 0px;
+  }
+  .nosotros, .somos {
+    margin-bottom: 0px;
+  }
+  .perfil {
+    margin-bottom: 40px;
+  }
+  /*Servicios*/
+  .estudios {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: larger;
+  }
+  .ensayos button {
+    padding: 5px 40px 5px 40px;
+  }
+  .ensayos h2 {
+    font-size: 20px;
+  }
+  .ensayos img {
+    width: 120px;
+    margin-right: 20px;
+  }
+  .baja-s {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ensayos li {
+    margin: 20px 0px 20px 0px;
+  }
+  /*Saber Más*/
+  .citogenetica {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "cito-1 cito-2";
+    gap: 20px;
+    background-color: #060327;
+    padding: 20px 0px 20px 0px;
+  }
+  .citogen-1 img {
+    width: 400px;
+    transition: 4s;
+  }
+  .citogen-1 img:hover {
+    transform: scale(0.7);
+  }
+  .citogen-2 {
+    margin: 2% 10% 2% 0px;
+  }
+  .cultivoEtapa img {
+    margin: 10px;
+  }
+  .etapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .descript {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .descript p {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .descript ul {
+    margin: 0px;
+  }
+  .descript li {
+    font-size: 13px;
+    margin: 5px 0px 5px 0px;
+  }
 }
-
-.comunica{
-    padding: 20px 10px 20px 10px;
-}
-
-.comunica h3{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    padding-bottom: 2px;
-    border-bottom: 1px solid #030114;
-    margin-bottom: 20px;
-}
-
-p.last-p{
-    margin-bottom: 8px;
-}
-
-
-
-@media(min-width: 480px){
-
-/*inicio*/
-
-    img.primero{
-        height: 350px;
-    }
-
-    div.primero{
-        height: 300px;
-    }
-
-    div.primero h1{
-        font-size: 60px;
-        padding: 15px 10px 0px 10px;
-    }
-    
-    div.primero p{
-        font-size: 25px;
-        padding: 5px 10px 30px 10px;
-    }
-
-    div.banner{
-        padding: 50px 0px 50px 0px;
-    }
-
-}
-
-
-@media(min-width: 768px){
-
-/*inicio*/
-
-    main.inicio{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "foto nombre"
-        "lemas lemas"
-        "banner banner";   
-    }
-
-    div.primero{
-        height: 350px;
-    }
-
-    div.cover{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    div.lemas{
-        width: 200px;
-        height: 320px;
-    }
-
-/*Nosotros*/
-
-    .quienes{
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-areas: 
-        "quien quien"
-        "nos-1 som-1"
-        "som-2 nos-2"
-        "nos-3 som-3";
-    }
-
-    .profesion{
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(6,1fr);
-        grid-template-areas: 
-        "equipo equipo equipo equipo equipo equipo"
-        "per-1 per-1 per-2 per-2 per-3 per-3"
-        ". per-4 per-4 per-5 per-5 .";
-    }
-
-    .nos h1{
-        margin: 40px 0px 40px 0px;
-    }
-
-    .nosotros, .somos{
-        margin-bottom: 0px;
-    }
-
-    .perfil{
-        margin-bottom: 40px;
-    }
-
-/*Servicios*/
-
-    .estudios{
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: larger;
-    }
-
-    .ensayos button{
-        padding: 5px 40px 5px 40px;
-    }
-
-    .ensayos h2{
-        font-size: 20px;  
-    }
-
-    .ensayos img{
-        width: 120px;
-        margin-right: 20px;
-    }
-
-    .baja-s{
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .ensayos li{
-        margin: 20px 0px 20px 0px;
-    }
-
-/*Saber Más*/
-
-    .citogenetica{
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "cito-1 cito-2";
-        gap: 20px;
-        background-color: #060327;
-        padding: 20px 0px 20px 0px;
-    }
-
-    .citogen-1 img{
-        width: 400px;
-        transition: 4s;
-    }
-
-    .citogen-1 img:hover{
-        transform:scale(0.7);
-    }
-
-    .citogen-2{
-        margin: 2% 10% 2% 0px;
-    }
-
-    .cultivoEtapa img{
-        margin: 10px;
-    }
-
-    .etapa{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .descript{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .descript p{
-        font-size: 13px;
-        margin-bottom: 5px;
-    }
-
-    .descript ul{
-        margin: 0px;
-    }
-
-    .descript li{
-        font-size: 13px;
-        margin: 5px 0px 5px 0px;
-    }
-}
-
-
-
-@media(min-width: 1024px){
-
-    nav li{
-        padding: 20px;
-    }
-
-/*inicio*/
-
-    div.primero{
-        padding-left: 5px;
-    }
-
-    div.primero h1{
-        margin-top: 20px;
-        font-size: 67px;
-    }
-    
-    div.primero p{
-        margin-top: 15px;
-        font-size: 30px;
-    }
-
-    footer{
-        padding: 0px 50px 0px 50px;
-    }
-
-/*Nosotros*/
-
-    .nos{
-        margin: 40px 10% 40px 10%;
-        gap: 25px;
-    }
-
-/*Servicios*/
-
-    .estudios{
-        font-size: x-large;
-        padding: 80px;
-        margin-bottom: 40px;
-    }
-
-    .ensayos button{
-        padding: 5px 40px 5px 40px;
-    }
-
-    .ensayos h2{
-        font-size: 28px;  
-    }
-
-    .ensayos img{
-        width: 120px;
-        margin-right: 20px;
-    }
-
-    .ensayos li{
-        font-size: larger;
-    }
-
-/*Saber Más*/
-
-    .cultivoEtapa img{
-        margin: 20px;
-    }
-
-    .descript p{
-        font-size: 15px;
-    }
-
-    .descript li{
-        font-size: 15px;
-    }
-
-/*Contacto*/
-    
-    .contacto{
-        height: 400px;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .contacto iframe{
-        width: 60%;
-        height: 400px;
-    }
-
-    .comunica{
-        width: 40%;
-        padding: 40px 20px 40px 20px;
-    }
-
-}
-
+@media (min-width: 1024px) {
+  nav li {
+    padding: 20px;
+  }
+  /*inicio*/
+  div.primero {
+    padding-left: 5px;
+  }
+  div.primero h1 {
+    margin-top: 20px;
+    font-size: 67px;
+  }
+  div.primero p {
+    margin-top: 15px;
+    font-size: 30px;
+  }
+  footer {
+    padding: 0px 50px 0px 50px;
+  }
+  /*Nosotros*/
+  .nos {
+    margin: 40px 10% 40px 10%;
+    gap: 25px;
+  }
+  /*Servicios*/
+  .estudios {
+    font-size: x-large;
+    padding: 80px;
+    margin-bottom: 40px;
+  }
+  .ensayos button {
+    padding: 5px 40px 5px 40px;
+  }
+  .ensayos h2 {
+    font-size: 28px;
+  }
+  .ensayos img {
+    width: 120px;
+    margin-right: 20px;
+  }
+  .ensayos li {
+    font-size: larger;
+  }
+  /*Saber Más*/
+  .cultivoEtapa img {
+    margin: 20px;
+  }
+  .descript p {
+    font-size: 15px;
+  }
+  .descript li {
+    font-size: 15px;
+  }
+  /*Contacto*/
+  .contacto {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+  }
+  .contacto iframe {
+    width: 60%;
+    height: 400px;
+  }
+  .comunica {
+    width: 40%;
+    padding: 40px 20px 40px 20px;
+  }
+}/*# sourceMappingURL=estilos.css.map */

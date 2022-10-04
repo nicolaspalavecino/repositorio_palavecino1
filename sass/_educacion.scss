@@ -1,0 +1,73 @@
+.saber h2{
+    text-align: center;
+    margin: 20px 0px 40px 0px;
+}
+
+.citogen-1{
+    text-align: center;
+    grid-area: cito-1;
+    img{
+        width: 90%;
+    }
+}
+
+.citogen-2{
+    color: white;
+    background-color: #565370;
+    padding: 20px;
+    margin-top: 10px;
+    h2{
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid white;
+        grid-area: cito-2;
+    }
+    
+}
+
+.citogenetica{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "cito-1"
+    "cito-2";
+}
+
+section.cultivo{
+    color:#060327;
+    button{
+        padding: 5px 20px 5px 5px;
+    }
+}
+
+.baja-e {
+    background-color:#837da879;
+    padding: 20px;
+}
+
+.etapa{
+    background-color: #a49fc179;
+    margin-bottom: 20px;
+}
+
+.lastEtapa{
+    margin: 0px;
+}
+
+.cultivoEtapa{
+    text-align: center;
+    background-color: rgb(240, 239, 254);
+    padding: 10px;
+    img{
+        margin: 5px;
+    }
+}
+
+.descript{
+    padding: 20px;
+    color: #060327;
+    li{
+        color: #060327;
+        margin-bottom: 5px;
+    }
+}

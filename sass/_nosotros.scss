@@ -1,0 +1,140 @@
+.nos{
+    margin: 0px 10px 40px 10px;
+    h1{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: #565370;
+        text-align: center;
+        margin: 20px 0px 20px 0px;
+    }
+}
+
+
+.nosotros{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #b9b7cd75;
+    padding: 20px;
+    margin-bottom: 10px;
+    h2{
+        margin: 10px 0px 20px 0px;
+    }
+}
+
+
+.somos{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        opacity: 0.6;
+        transition: 2s;
+    }
+    img:hover{
+        transform: scale(1.4);
+    }
+}
+
+
+.equipo{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #565370;
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+}
+
+.perfil{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.perfil:hover{
+    animation: profile 4s;
+}
+
+@keyframes profile{
+    10%{
+        background-color:#b9b7cd49;
+    }
+    40%{
+        transform: scale(1.13);
+    }
+}
+
+.profpic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    }
+}
+
+
+.nos h1{
+    grid-area: quien;
+}
+
+.nos-1{
+    grid-area: nos-1;
+}
+
+.nos-2{
+    grid-area: nos-2;
+}
+
+.nos-3{
+    grid-area: nos-3;
+}
+
+.som-1{
+    grid-area: som-1;
+}
+
+.som-2{
+    grid-area: som-2;
+}
+
+.som-3{
+    grid-area: som-3;
+}
+
+.equipo{
+    grid-area: equipo;
+}
+
+.per-1{
+    grid-area: per-1;
+}
+
+.per-2{
+    grid-area: per-2;
+}
+
+.per-3{
+    grid-area: per-3;
+}
+
+.per-4{
+    grid-area: per-4;
+}
+
+.per-5{
+    grid-area: per-5;
+}
