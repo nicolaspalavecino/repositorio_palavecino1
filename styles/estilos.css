@@ -611,17 +611,17 @@ section.cultivo button {
     grid-template-areas: "cito-1 cito-2";
     gap: 20px;
     background-color: #060327;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 10px 20px 10px;
   }
   .citogen-1 img {
-    width: 400px;
+    width: 380px;
     transition: 4s;
   }
   .citogen-1 img:hover {
     transform: scale(0.7);
   }
   .citogen-2 {
-    margin: 2% 10% 2% 0px;
+    margin: 2% 8% 2% 0px;
   }
   .cultivoEtapa img {
     margin: 10px;
@@ -649,6 +649,9 @@ section.cultivo button {
   }
 }
 @media (min-width: 1024px) {
+  .citogen-2 p {
+    font-size: 22px;
+  }
   .cultivoEtapa img {
     margin: 20px;
   }
