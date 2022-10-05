@@ -47,12 +47,15 @@ footer {
   background-color: #030114;
   color: white;
   font-style: bold;
+}
+
+.iconos {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding: 0px 10px 0px 10px;
 }
-footer div {
+.iconos div {
   width: 140px;
   padding: 5px;
   margin: 10px;
@@ -60,18 +63,34 @@ footer div {
   flex-direction: column;
   align-items: center;
 }
-footer div img {
+.iconos div img {
   padding: 5px;
   margin: 2px;
 }
-footer div p {
+.iconos div p {
   font-size: 12px;
   font-weight: 100;
+}
+
+.autor {
+  width: 100%;
+  background-color: #06022b;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px 0px 5px 0px;
+}
+.autor h3 {
+  margin: 0px;
+  font-size: 10px;
+  font-weight: lighter;
 }
 
 @media (min-width: 1024px) {
   nav li {
     padding: 20px;
+  }
+  .iconos {
+    padding: 0px 50px 0px 50px;
   }
 }
 img.primero {
@@ -250,9 +269,6 @@ section.banner {
   div.primero p {
     margin-top: 15px;
     font-size: 30px;
-  }
-  footer {
-    padding: 0px 50px 0px 50px;
   }
 }
 .nos {
