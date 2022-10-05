@@ -56,7 +56,6 @@ section.cultivo{
 
 .cultivoEtapa{
     text-align: center;
-    background-color: rgb(240, 239, 254);
     padding: 10px;
     img{
         width: 100px;
@@ -73,6 +72,46 @@ section.cultivo{
     }
 }
 
+.microscopio{
+    background-color: #c5c2e051;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 25px 10px 10px 10px;
+}
+
+.mic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    h4{
+        font-size: 20px;
+    }
+}
+
+.micro-0{
+    grid-area: micro-0;
+}
+
+.micro-1{
+    grid-area: micro-1;
+}
+
+.micro-2{
+    grid-area: micro-2;
+}
+
+.micro-3{
+    grid-area: micro-3;
+}
+
+.micro-4{
+    grid-area: micro-4;
+}
 
 @media(min-width: 768px){
 
@@ -98,9 +137,14 @@ section.cultivo{
         margin: 2% 8% 2% 0px;
     }
 
-    .cultivoEtapa img{
-        margin: 10px;
-    }
+    .cultivoEtapa{
+        img{
+            margin: 10px;
+        }
+        h3{
+            font-size: 20px;
+        }
+    } 
 
     .etapa{
         display: flex;
@@ -123,7 +167,17 @@ section.cultivo{
                 margin: 5px 0px 5px 0px;
             }
         }
-    } 
+    }
+
+    .microscopio{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "micro-0 micro-0"
+        "micro-1 micro-2"
+        "micro-3 micro-4"; 
+    }
 }
 
 @media(min-width: 1024px){
@@ -145,5 +199,14 @@ section.cultivo{
             li{
                 font-size: 15px;
             }
+    }
+
+    .microscopio{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: 
+        "micro-0 micro-0 micro-0 micro-0"
+        "micro-1 micro-2 micro-3 micro-4"; 
     }
 }
