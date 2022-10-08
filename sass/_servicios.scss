@@ -1,8 +1,8 @@
 .estudios{
-    background-color:#b9b7cd49;
+    background-color: $bcolor5;
     text-align: center;
     padding: 10px;
-    color: #060327;
+    color: $bcolor2;
     p{
         margin: 1rem;
     }
@@ -15,7 +15,7 @@
         height: 150px;
         padding: 5px 10px 5px 5px;
         margin-top: 20px;
-        background-color:#e4e3f14f;
+        background-color: $bcolor4;
         img{
             width: 90px;
             margin-right: 5px;

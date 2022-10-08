@@ -13,7 +13,7 @@
 
 .citogen-2{
     color: white;
-    background-color: #565370;
+    background-color: $bcolor4;
     padding: 20px;
     margin-top: 10px;
     h2{
@@ -41,12 +41,12 @@ section.cultivo{
 }
 
 .baja-e {
-    background-color:#837da879;
+    background-color: $bcolor4;
     padding: 20px;
 }
 
 .etapa{
-    background-color: #a49fc179;
+    background-color: $bcolor4;
     margin-bottom: 20px;
 }
 
@@ -73,7 +73,7 @@ section.cultivo{
 }
 
 .microscopio{
-    background-color: #c5c2e051;
+    background-color: $bcolor5;
     width: 100%;
     text-align: center;
     display: flex;
@@ -120,7 +120,7 @@ section.cultivo{
         grid-template-areas: 
         "cito-1 cito-2";
         gap: 20px;
-        background-color: #060327;
+        background-color: $bcolor2;
         padding: 20px 10px 20px 10px;
     }
 
