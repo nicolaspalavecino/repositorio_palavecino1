@@ -547,7 +547,7 @@ section.banner {
 }
 
 .citogen-2 {
-  color: white;
+  color: #060327;
   background-color: rgba(228, 227, 241, 0.3098039216);
   padding: 20px;
   margin-top: 10px;
@@ -661,6 +661,7 @@ section.cultivo button {
     transform: scale(0.7);
   }
   .citogen-2 {
+    color: white;
     margin: 2% 8% 2% 0px;
   }
   .cultivoEtapa img {
