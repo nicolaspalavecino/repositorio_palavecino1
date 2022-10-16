@@ -16,11 +16,11 @@
     background-color: $bcolor4;
     padding: 20px;
     margin-top: 10px;
+    grid-area: cito-2;
     h2{
         text-align: center;
         padding-bottom: 10px;
-        border-bottom: 1px solid white;
-        grid-area: cito-2;
+        border-bottom: 1px solid $bcolor2;
     }
     
 }
@@ -125,7 +125,7 @@ section.cultivo{
     }
 
     .citogen-1 img{
-            width: 380px;
+            width: 320px;
             transition: 4s;
     }
     
@@ -136,6 +136,9 @@ section.cultivo{
     .citogen-2{
         color: white;
         margin: 2% 8% 2% 0px;
+        h2{
+            border-bottom: 1px solid white;
+        }
     }
 
     .cultivoEtapa{
@@ -208,6 +211,9 @@ section.cultivo{
         grid-template-columns: repeat(4,1fr);
         grid-template-areas: 
         "micro-0 micro-0 micro-0 micro-0"
-        "micro-1 micro-2 micro-3 micro-4"; 
+        "micro-1 micro-2 micro-3 micro-4";
+        p{
+            font-size: larger;
+        } 
     }
 }

@@ -551,12 +551,12 @@ section.banner {
   background-color: rgba(228, 227, 241, 0.3098039216);
   padding: 20px;
   margin-top: 10px;
+  grid-area: cito-2;
 }
 .citogen-2 h2 {
   text-align: center;
   padding-bottom: 10px;
-  border-bottom: 1px solid white;
-  grid-area: cito-2;
+  border-bottom: 1px solid #060327;
 }
 
 .citogenetica {
@@ -654,7 +654,7 @@ section.cultivo button {
     padding: 20px 10px 20px 10px;
   }
   .citogen-1 img {
-    width: 380px;
+    width: 320px;
     transition: 4s;
   }
   .citogen-1 img:hover {
@@ -663,6 +663,9 @@ section.cultivo button {
   .citogen-2 {
     color: white;
     margin: 2% 8% 2% 0px;
+  }
+  .citogen-2 h2 {
+    border-bottom: 1px solid white;
   }
   .cultivoEtapa img {
     margin: 10px;
@@ -716,6 +719,9 @@ section.cultivo button {
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "micro-0 micro-0 micro-0 micro-0" "micro-1 micro-2 micro-3 micro-4";
+  }
+  .microscopio p {
+    font-size: larger;
   }
 }
 section.banner-sup {
